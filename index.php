@@ -8,6 +8,7 @@
 <div>
   <input type="number" id="numinp" min="0">
   <button onclick="calcFactorial()">Calculate</button>
+  <p id="result"></p>
 </div>
 <div>
   <button>Generate Number</button>
@@ -33,7 +34,12 @@
   function calcFactorial() {
     const input = document.getElementById('numinp').value;
     const number = parseInt(input, 10);
-    
+    if(isNaN(number) || number < 0) {
+      document.getElementById('result').innerText = 'Not valid number';
+    } else {
+      const result = factorial(number);
+      document.getElementById('result').innerText = '${result}';
+    }
   }
 </script>
 

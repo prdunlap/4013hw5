@@ -15,7 +15,9 @@
   <p id="randNumResult"></p>
 </div>
 <div>
-  <button>Check to see if Palindrome</button>
+  <input type="text" id="palindromeInput">
+  <button onclick="checkPalindrome()">Check to see if Palindrome</button>
+  <p id="palindromeResult"></p>
 </div>
 <div>
   <button>Odd or Even Checker</button>
@@ -49,6 +51,18 @@
   function generateRandNum() {
     const randomNumber = randomNum(1,100);
     document.getElementById('randNumResult').innterText = `Random Number: ${randomNumber}`;
+  }
+
+  function isPalindrome(str) {
+    const cleanedStr = str.toLowerCase();
+    const reversedStr = str.reverse();
+    return cleanedStr === reversedStr;
+  }
+
+  function checkPalindrome() {
+    const input = document.getElementById('palindromeInput').value;
+    const result = isPalindrome(input);
+    document.getElementById('palindromeResult').innerText = result ? `${input IS a palindrome}` : `${input} IS NOT a palindrome`;
   }
 </script>
 

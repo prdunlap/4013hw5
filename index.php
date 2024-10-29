@@ -38,7 +38,7 @@
       document.getElementById('result').innerText = 'Not valid number';
     } else {
       const result = factorial(number);
-      document.getElementById('result').innerText = '${result}';
+      document.getElementById('result').innerText = `${result}`;
     }
   }
 </script>

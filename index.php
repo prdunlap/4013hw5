@@ -62,7 +62,7 @@
   function checkPalindrome() {
     const input = document.getElementById('palindromeInput').value;
     const result = isPalindrome(input);
-    document.getElementById('palindromeResult').innerText = result ? `"${input}" IS a palindrome}` : `"${input}" IS NOT a palindrome`;
+    document.getElementById('palindromeResult').innerText = result ? `"${input}" IS a palindrome` : `"${input}" IS NOT a palindrome`;
   }
 </script>
 

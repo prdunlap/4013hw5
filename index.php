@@ -50,12 +50,12 @@
   }
   function generateRandNum() {
     const randomNumber = randomNum(1,100);
-    document.getElementById('randNumResult').innterText = `Random Number: ${randomNumber}`;
+    document.getElementById('randNumResult').innterText = `${randomNumber}`;
   }
 
   function isPalindrome(str) {
     const cleanedStr = str.toLowerCase();
-    const reversedStr = cleanedStr.reverse();
+    const reversedStr = cleanedStr.split('').reverse().join('');
     return cleanedStr === reversedStr;
   }
 

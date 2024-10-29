@@ -53,6 +53,7 @@
   }
   function generateRandNum() {
     const randomNumber = randomNum(1,100);
+    console.log("Generated number:",randomNumber);
     document.getElementById('randNumResult').innterText = `${randomNumber}`;
   }
 

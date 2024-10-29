@@ -6,6 +6,7 @@
   </head>
   
 <div>
+  <input type="number" id="numinp" min="0"> 
   <button onclick="calcFactorial()">Calculate Factorial</button>
   <p id="result"></p>
 </div>

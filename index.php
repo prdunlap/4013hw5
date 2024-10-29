@@ -6,7 +6,6 @@
   </head>
   
 <div>
-  <input type="number" id="numinp" min="0">
   <button onclick="calcFactorial()">Calculate Factorial</button>
   <p id="result"></p>
 </div>
@@ -48,7 +47,6 @@
   }
   function generateRandNum() {
     const randomNum = randomNum(0,10);
-    document.getElementById('numberInp').value = randomNum;
     document.getElementById('result').innterText = `Random Number: ${randomNum}`;
   }
 </script>

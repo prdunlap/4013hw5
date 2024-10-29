@@ -20,10 +20,13 @@
   <p id="palindromeResult"></p>
 </div>
 <div>
+  <input type="number" id="OddEvenInput">
   <button>Odd or Even Checker</button>
+  <p id="oddevenResult"></p>
 </div>
 <div>
   <button>Generate Random Hex Code</button>
+  <p id="hexCodeResult"></p>
 </div>
 
 <script>

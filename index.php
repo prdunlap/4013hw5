@@ -10,8 +10,8 @@
   <p id="result"></p>
 </div>
 <div>
-  <input type="number" id="numberInp" min="0">
   <button onclick="generateRandNum()">Generate Number</button>
+  <p id="randNumResult"></p>
 </div>
 <div>
   <button>Check to see if Palindrome</button>
@@ -46,8 +46,8 @@
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
   function generateRandNum() {
-    const randomNum = randomNum(0,10);
-    document.getElementById('result').innterText = `Random Number: ${randomNum}`;
+    const randomNum = randomNum(1,100);
+    document.getElementById('randNumResult').innterText = `Random Number: ${randomNum}`;
   }
 </script>
 

@@ -55,7 +55,7 @@
 
   function isPalindrome(str) {
     const cleanedStr = str.toLowerCase();
-    const reversedStr = str.reverse();
+    const reversedStr = cleanedStr.reverse();
     return cleanedStr === reversedStr;
   }
 

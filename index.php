@@ -11,7 +11,8 @@
   <p id="result"></p>
 </div>
 <div>
-  <button>Generate Number</button>
+  <input type="number" id="numberInp" min="0">
+  <button onclick="generateRandNum()">Generate Number</button>
 </div>
 <div>
   <button>Check to see if Palindrome</button>
@@ -40,6 +41,15 @@
       const result = factorial(number);
       document.getElementById('result').innerText = `${result}`;
     }
+  }
+
+  function randomNum(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  function generateRandNum() {
+    const randomNum = randomNum(0,10);
+    document.getElementById('numberInp').value = randomNum;
+    document.getElementById('result').innterText = `Random Number: ${randomNum}`;
   }
 </script>
 

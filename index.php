@@ -43,9 +43,7 @@
     }
   }
 
-  function randomNum(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+  
   function generateRandNum() {
     const randomNum = randomNum(1,100);
     document.getElementById('randNumResult').innterText = `Random Number: ${randomNum}`;

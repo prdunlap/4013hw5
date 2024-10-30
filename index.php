@@ -82,7 +82,7 @@
     document.getElementById('hexCodeResult').style.color = hexCode;
   }
   
-  let OddEvenChecker = document.getElementById('OddEvenInput');
+  const OddEvenChecker = document.getElementById('OddEvenInput');
   function isOddOrEven(OddEvenChecker) {
     if(OddEvenChecker % 2 === 0) {
       return "Even";

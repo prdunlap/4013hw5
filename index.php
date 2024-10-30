@@ -90,7 +90,7 @@
       return "Odd";
     }
   let OEResult = isOddOrEven(OddEvenChecker);
-    document.getElementById('oddevenResult').innerText= `${document.getElementById(''OddEvenInput)} is ${OEResult}`
+    document.getElementById('oddevenResult').innerText= `${document.getElementById('OddEvenInput')} is ${OEResult}`
   }
 </script>
 

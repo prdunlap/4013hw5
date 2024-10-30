@@ -81,6 +81,14 @@
     document.getElementById('hexCodeResult').innerText=`Generated Hex Code: ${hexCode}`;
     document.getElementById('hexCodeResult').style.color = hexCode;
   }
+  let OddEvenInput = document.getElementById('OddEvenInput');
+  function isOddOrEven(OddEvenInput) {
+    if(OddEvenInput % 2 === 0) {
+      return "Even";
+    } else {
+      return "Odd";
+    }
+  }
 </script>
 
   

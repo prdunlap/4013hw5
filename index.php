@@ -73,7 +73,7 @@
     const hexcodechars = '0123456789ABCDEF';
     let hexCode = '#';
 
-    for (let k = 0, k<6, k++) {
+    for (let i = 0; i<6; k++) {
       const randIndex = Math.floor(Math.random() * hexcodechars.length);
       hexCode += hexcodechars[randIndex];
     }

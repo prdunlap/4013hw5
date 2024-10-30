@@ -78,16 +78,19 @@
       hexCode += hexcodechars[randIndex];
     }
     return hexCode;
-    document.getElementById('hexCodeResult').innerText=`Generated Hex Code: ${hexCode}`;
+    document.getElementById('hexCodeResult').innerText= hexCode ?;
     document.getElementById('hexCodeResult').style.color = hexCode;
   }
-  let OddEvenInput = document.getElementById('OddEvenInput');
-  function isOddOrEven(OddEvenInput) {
+  
+  let OddEvenChecker = document.getElementById('OddEvenInput');
+  function isOddOrEven(OddEvenChecker) {
     if(OddEvenInput % 2 === 0) {
       return "Even";
     } else {
       return "Odd";
     }
+  let OEResult = isOddOrEven(OddEvenChecker);
+    document.getElementById('oddevenResult').innerText= `${document.getElementById(''OddEvenInput)} is ${OEResult}`
   }
 </script>
 

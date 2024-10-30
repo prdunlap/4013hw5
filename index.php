@@ -68,6 +68,19 @@
     const result = isPalindrome(input);
     document.getElementById('palindromeResult').innerText = result ? `"${input}" IS a palindrome` : `"${input}" IS NOT a palindrome`;
   }
+
+  function hexcodeGenerator() {
+    const hexcodechars = '0123456789ABCDEF';
+    let hexCode = '#';
+
+    for (let i = 0, i<6, i++) {
+      const randIndex = Math.floor(Math.random() * hexcodechars.length);
+      hexCode += hexcodechars[randIndex];
+    }
+    return hexCode;
+    document.getElementById('hexCodeResult').innerText=`Generated Hex Code: ${hexCode}`;
+    document.getElementById('hexCodeResult').style.color = hexCode;
+  }
 </script>
 
   

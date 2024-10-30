@@ -78,7 +78,7 @@
       hexCode += hexcodechars[randIndex];
     }
     return hexCode;
-    document.getElementById('hexCodeResult').innerText= hexCode ?;
+    document.getElementById('hexCodeResult').innerText= `"${hexCode}"`;
     document.getElementById('hexCodeResult').style.color = hexCode;
   }
   

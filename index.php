@@ -82,15 +82,21 @@
     document.getElementById('hexCodeResult').style.color = hexCode;
   }
   
-  const OddEvenChecker = document.getElementById('OddEvenInput');
-  function isOddOrEven(OddEvenChecker) {
+
+  function isOddOrEven(n) {
     if(OddEvenChecker % 2 === 0) {
       return "Even";
     } else {
       return "Odd";
     }
-  let OEResult = isOddOrEven(OddEvenChecker);
-    document.getElementById('oddevenResult').innerText= `${document.getElementById('OddEvenInput')} is ${OEResult}`;
+  }
+
+  function checkOddEven() {
+      const NUMBERinp = document.getElementById('OddEvenInput').value;
+    const n = parseInt(NUMBERinp, 10);
+
+    const result = isOddOrEven(n);
+    document.getElementById('oddevenResult').innerText = "That number is " + result;
   }
 </script>
 

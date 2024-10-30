@@ -21,7 +21,7 @@
 </div>
 <div>
   <input type="number" id="OddEvenInput">
-  <button onclick="isOddOrEven()">Odd or Even Checker</button>
+  <button onclick="checkOddEven()">Odd or Even Checker</button>
   <p id="oddevenResult"></p>
 </div>
 <div>

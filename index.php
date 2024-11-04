@@ -77,9 +77,11 @@
       const randIndex = Math.floor(Math.random() * hexcodechars.length);
       hexCode += hexcodechars[randIndex];
     }
+    const hexCodeElement = document.getElementById('hexCodeResult');
+    hexCodeElement.innerText = hexCode;
+    hexCodeElement.style.backgroundColor = hexCode;
     return hexCode;
-    document.getElementById('hexCodeResult').innerText= `"${hexCode}"`;
-    document.getElementById('hexCodeResult').style.color = hexCode;
+    
   }
   
 

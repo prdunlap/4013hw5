@@ -84,7 +84,7 @@
   
 
   function isOddOrEven(n) {
-    if(OddEvenChecker % 2 === 0) {
+    if(n % 2 === 0) {
       return "Even";
     } else {
       return "Odd";
